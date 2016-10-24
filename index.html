@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="css/mycms_style.css" rel="stylesheet" type="text/css" />
+	</head>
+<body>
+<div class="header">
+	<div class="logo">
+		<a href="">
+			<div class="sq_start">
+				<p>成都哈哈网络科技</p>
+				<span>Chengdu ha ha network technology</span>
+			</div>
+		</a>
+	</div>
+	<div class="nav">
+		<ul>
+			<li><a href="" class="on"><span><b>INDEX 首页</b></span></a></li>
+			<li>
+				<a href=""><span><b>ABOUT 关于</b></span></a>
+			</li>
+			<li><a href=""><span><b>C A S E案例</b></span></a></li>
+			<li><a href=""><span><b>ARTICLE文章</b></span></a></li>
+			<li><a href=""><span><b>CONTACT联系</b></span></a></li>
+		</ul>
+	</div>
+	<div class="header_bottom"></div>
+</div>
+
+<div class="index_content">
+	<div class="left_light"></div>
+	<div class="right_light"></div>
+	<div class="index_fuwu">
+			<P>对客户的期待给予高度的回应，以追求没有瑕疵的精神来完成客户的需求。<br>
+服务过程至始至终体现出对客户的尊敬和感激<br>
+站在客户的立场，梳理其需求，并寻求比客户本人要求更佳的解决方案，让客户选择。
+					</P>
+			<p>
+				Look forward to give the height of the response to customer, in order to pursue the spirit of without blemish to complete the needs of customers.<br>
+Service throughout the process reflects the respect and gratitude to the customer<br>
+Standing in customer's position, comb their needs, and to seek I require a better solution than the customer, let the customer choice.<br>
+			</p>	
+	</div>
+	<div class="index_fenlei">
+		<div class="index_cycle"></div>
+		<ul class="index_fenleidiv">
+			<a href="{$CATEGORYS[10]['url']}">
+			<li class="index_fenlei_li1">
+				<div class="index_fenlei_box_top index_fenlei_div1 index_fenleid">
+					<h2>品牌网站设计及开发</h2>
+					<span>
+						BRAND WEBSITE DESIGN <br>AND DEVELOPMENT
+					</span>
+				</div>
+				<div class="index_fenlei_box_cen index_fenlei_div1 index_fenleid">
+					为客户提供专业化、<br>品牌化的网站界面设计、<br>网站策划、<br>网站建设及开发
+				</div>
+			</li>
+			</a>
+			<a href="{$CATEGORYS[10]['url']}">
+			<li class="mr14 index_fenlei_li2">
+				<div class="index_fenlei_box_top index_fenlei_div2 index_fenleid">
+					<h2>品牌商业摄影</h2>
+					<span>
+						BRAND COMMERCIAL <br>PHOTOGRAPHY
+					</span>
+				</div>
+				<div class="index_fenlei_box_cen index_fenlei_div2 index_fenleid">
+					为客户提供专业化、<br>多元化、<br>多角度的产品摄影<br>
+				</div>
+			</li>
+			</a>
+			<a href="{$CATEGORYS[10]['url']}">
+			<li class="index_fenlei_li3">
+				<div class="index_fenlei_box_top index_fenlei_div3 index_fenleid">
+					<h2>品牌视觉形象设计</h2>
+					<span>
+						BRAND VISUAL IMAGE <br>DESIGN
+					</span>
+				</div>
+				<div class="index_fenlei_box_cen index_fenlei_div3 index_fenleid">
+					专注于品牌十年,<br>有足够强,足够多的设计师<br>为您解决各种方案.
+				</div>
+			</li>
+			</a>
+			<a href="{$CATEGORYS[10]['url']}">
+			<li class="index_fenlei_li4">
+				<div class="index_fenlei_box_top index_fenlei_div4 index_fenleid">
+					<h2>高品质印刷服务</h2>
+					<span>
+						THE HIGH QUALITY <br>PRINTING SERVICES
+					</span>
+				</div>
+				<div class="index_fenlei_box_cen index_fenlei_div4 index_fenleid">
+					拥有四、六色海德堡胶印机<br>及丝印，<br>还有十年以上的高端技工，<br>您还担心什么呢？
+				</div>
+			</li>
+			</a>
+		</ul>
+	</div>
+</div>
+
+<div class="index_foot">
+	<div class="index_foot_tit">
+		<h2>倾力打造每一个细节重视每一个创意</h2>
+		<span>TO CREATE EVERY DETAIL THE IMPORTANCE OF EACH IDEA</span>
+	</div>
+	<div class="index_foot_qqphone">
+		<div class="index_qq">
+			
+		</div>
+		<div class="index_phone">
+			
+		</div>
+	</div>
+	<div class="index_copyright">
+		Copyright©2014-2015 哈哈网络科技，All Rights Reserved.<br>蜀ICP备16018302号-1
+	</div>
+</div>
+
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+	<script type="text/javascript">jQuery(".slideTxtBox").slide({trigger:"click"});</script>
+
+	<script type="text/javascript">
+		jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+		$(document).ready(function() {  
+		
+			$('.index_fenleidiv li').addClass('index_conimg_hover');   //首页的背景旋转
+		
+			var slide_height = $(window).height(); 
+			var slide_width = $(window).width(); 
+			$("img.slide_img").height(slide_height-73);
+			$("img.slide_img").width(slide_width);	
+			
+			
+		});
+	</script>
+
+</body>
+</html>
